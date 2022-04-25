@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+  {% include 'include/header.html' %}
+  <title>blog - {% block title %} {% endblock %} </title>
+
+
+</head>
+<body>
+    <!-------navbar includer-->
+    {% include 'include/nav.html' %}
+    {% comment %} {% include 'include/header.html' %} {% endcomment %}
+
+    <!-------navbar end -->
+  <div class="main">
+    <!-- Hero Banner Section -->
+    <!-- Hero Banner Section -->
+    {% block content %}{% endblock content %}
+    <!-- Hero Section -->
+    {% include 'include/footer.html' %}
+    <!-- Footer Section End-->
+    {% block javascript %}
+
+    {% endblock javascript %}
+
+
+
+
+
+
+
+    
+  </div>
+</body>
+</html>
+
+
